@@ -1,0 +1,230 @@
+.cloud_div_cont{
+    height: 70vh;
+    width:100%;
+    background-color: aliceblue;
+}
+
+.cloud_h2_text{
+    font-size: 70px;
+    font-weight: 500;
+    font-family:Houschka-medium;
+    color: #000;
+    margin-left: 60px;
+     padding: 5px;
+}
+
+.cloud_p_textds{
+    font-family: Basis-regular;
+    font-size: 1.5rem;
+  
+    width:62%;
+   
+    line-height: 2rem;
+    margin:30px;
+    padding: 5px;
+    margin-left: 60px;
+   
+    letter-spacing: .03125rem;
+    color: #332c2c;
+}
+
+.cloud_approach_sec{
+    height: 55vh;
+    width:100%;
+    background-color: #181414;
+
+}
+
+.cloud_apprch_des{
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 20px;
+    top:20px;
+    
+    color: white;
+    margin-left: 100px;
+     padding: 5px;
+}
+
+.cloud_approac_img{
+    height: 11rem;
+    width:15rem;
+    left:20px;
+    margin:25px ;
+    color: aliceblue;
+    
+}
+
+.cloud_apprch-p{
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+  margin-left: 35px ;
+  margin-top: -20px;
+    
+}
+
+
+// cloud offering page
+
+.cloud_offer_div{
+    width: 100%;
+    background-color: azure;
+    
+
+}
+
+
+.cloud_offer_info{
+   min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.cloud_offer_info .cloud-offer1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: beige;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.cloud-offer-fsimg{
+    //position: relative;
+    width: 400px;
+    height: 550px;
+    background-color: beige;
+   
+}
+
+
+
+
+/*cloud grid */
+
+.cloud_data_grid{
+      width:100%;
+     margin-top:20px;
+      padding: 10px 10px;
+      background-color: rgb(142, 195, 241);
+}
+
+
+.cloud-off-inf{
+    
+    color:#000;
+    font-size: 60px;
+   margin: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-family:Houschka-medium;
+    
+
+}
+
+.image-grid {
+	//--gap: 16px;
+    margin-top: 60px;
+   
+	--num-cols: 4;
+	--row-height: 300px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+    overflow: hidden;
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    background: rgba(0, 0, 0, 0) linear-gradient(19deg, #000 0, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0 0;
+    transition: transform  2s;
+    
+}
+
+.image-grid:hover>img{
+  transform: scale(1.2);
+}
+
+
+
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+}
+
+
+
+
+/* AWS Client Success */
+
+.aws-client_info{
+    height: 120vh;
+    width:100%;
+    // margin: 50px;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.aws_learn_imgs{
+    height:92%;
+    width:50%;
+    position: absolute;
+    right: 0.1rem;
+    
+
+}
+
+
+
+
+.aws-client_wrap{
+    background-color: #332c2c;
+    width: 100%;
+    height: 120vh;
+    margin-top: 30px;
+}
+
+.aws-font-style{
+    font-size: 53px;
+    width:65%;
+    font-weight: 600;
+    font-family: Poppins;
+    color: white;
+    margin-left: 30px;
+    padding: 5px;
+}
+
+
+.aws-dataeng-p{
+    font-size: 24px;
+    width:45%;
+    font-weight: 200;
+    font-family: Poppins;
+    color:white;
+    margin:20px;
+    margin-left: 30px;
+    padding:10px
+}

@@ -1,0 +1,87 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+
+.career-card-carousel {
+  overflow: hidden;
+  width: 510px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+  margin: 200px;
+  margin-right: 25px;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.career-card-item{
+       display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  
+  
+  background-color: #e57a7a;
+}
+
+.career-item-text {
+  font-size: 1rem;
+  margin: 40px 0 40px 0;
+  padding: 0 20px 0 20px;
+  white-space: normal;
+  color: #617d98;
+}
+
+.career-card-img {
+
+  width: 150px;
+  height:120px;
+  border-radius: 50%;
+ padding: 0 20px 0 20px;
+}
+
+/* final stage */
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow {
+  background: none;
+  
+  border: none;
+
+  cursor: pointer;
+ margin-top: -3rem;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  color: #26343f;
+}
+
+.indicator-symbol-active {
+  color: #ffffff;
+}

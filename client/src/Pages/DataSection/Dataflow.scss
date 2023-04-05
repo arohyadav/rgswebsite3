@@ -1,0 +1,66 @@
+.dataflow-container{
+    width:100%;
+
+    height:40vh;
+    //margin:30px 12px;
+    margin:30px 1px;
+    //margin-top:10rem;
+    margin-top:37rem;
+      background: rgb(48,225,232); 
+ background: linear-gradient(90deg, rgba(48,225,232,1) 0%, rgba(103,49,204,1) 32%, rgba(26,75,133,1) 60%, rgba(27,51,106,1) 100%); 
+
+}
+
+.data-flow-img{
+    height:10rem;
+    width:20rem;
+    //text-align:center;
+  
+    margin:70px 20px -190px 90px;
+   
+    padding:20px 10px;
+    box-sizing: border-box;
+}
+
+.data-flow-rgs-contact{
+   // display: flex;
+    -webkit-box-orient:vertical-align;
+   
+}
+
+.data-flow-rgs-contact, .arrow-btn-white-blue{
+color: #0f5fdc;
+    font-size: 1.125rem;
+    line-height: 3.225rem;
+    padding: 0 1.5625rem;
+    margin:38px;
+    margin-bottom:2px;
+  
+   
+ 
+    border-radius: 5px;
+    font-weight: 600;
+    background: #fcfcfc;
+    float:right;
+    height:3.3rem;
+    width:10rem;
+  
+    
+   
+    
+}
+
+.data-flow-rgs-contact, .arrow-btn-white-blue::after{
+    content: "";
+    background: url("C:\Users\Yoga\rgs-techwebsite\public\rgs-img\arrow-btn-light-blue.svg") no-repeat;
+    
+   
+}
+/*
+img:hover{
+    -webkit-transition: all .45s cubic-bezier(.65,0,.076,1);
+    -o-transition: all .45s cubic-bezier(.65,0,.076,1);
+    transition: all .45s cubic-bezier(.65,0,.076,1);
+}
+
+*/
