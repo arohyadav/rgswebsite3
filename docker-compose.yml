@@ -1,0 +1,25 @@
+version: '3'
+services:
+  backend:
+    container_name: node_backend
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app
+    command: npm start
+
+  frontend:
+    container_name: react_frontend
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+    environment:
+      - REACT_APP_API_BASE_URL=http://backend:5000
+    command: npm start
