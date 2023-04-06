@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import "./ContactForm.css";
+
 
 const Form = () => {
   const [formValues, setFormValues] = useState({
@@ -32,37 +34,40 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} class="contact-us-form">
+    <div className="contact_details">
+        <img src="rgs-img/contact_info.jpg" alt=""></img>
+    <form onSubmit={handleSubmit} className="contact-us-form">
       <label>
-        First Name:
-        <input type="text" name="firstname" value={formValues.firstname} onChange={handleChange} />
+        First Name*
+        <input type="text" name="firstname" value={formValues.firstname} onChange={handleChange} placeholder="Enter First Name" />
       </label><br></br>
       <label>
-        Last Name:
-        <input type="text" name="lastname" value={formValues.lastname} onChange={handleChange} />
+        Last Name*
+        <input type="text" name="lastname" value={formValues.lastname} onChange={handleChange} placeholder="Enter Last Name" />
       </label>
       <label><br></br>
-        Work email:
-        <input type="email" name="workemail" value={formValues.workemail} onChange={handleChange} />
+        Work email*
+        <input type="email" name="workemail" value={formValues.workemail} placeholder="Enter workemail" onChange={handleChange} />
       </label><br></br>
       <label>
-      Phone Number:
-        <input type="text" name="phonenumber" value={formValues.phonenumber} onChange={handleChange} />
+      Phone Number*
+        <input type="text" name="phonenumber" placeholder="Enter Phoneno." value={formValues.phonenumber} onChange={handleChange} />
       </label><br></br>
       <label>
-      Job title:
-        <input type="text" name="jobtitle" value={formValues.jobtitle} onChange={handleChange} />
+      Job title*
+        <input type="text" name="jobtitle" placeholder="Enter jobtitle" value={formValues.jobtitle} onChange={handleChange} />
       </label><br></br>
       <label>
-        Company:
-        <input type="text" name="company" value={formValues.company} onChange={handleChange} />
+        Company*
+        <input type="text" name="company" placeholder="Enter company name" value={formValues.company} onChange={handleChange} />
       </label><br></br>
       <label>
-        Messagebox:
-        <textarea name="messagebox" value={formValues.messagebox} onChange={handleChange} />
+        Messagebox*
+        <textarea name="messagebox" placeholder="Write message" value={formValues.messagebox} onChange={handleChange} />
       </label>
       <button type="submit">Submit</button>
     </form>
+    </div>
   );
 };
 
